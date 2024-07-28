@@ -1,14 +1,16 @@
 import './App.css'
-import Login from './components/login'
-import { Button } from "@/components/ui/button"
+import Login from './Auth/login'
+import Home from './pages/home'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 function App() {
   return (
-    <div>
-    <Login />
-    <Button>Click me</Button>
-    </div>
-    
+    <Router>
+      <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path='login' element={<Login />} />
+      </Routes>
+    </Router>
   )
 }
 
