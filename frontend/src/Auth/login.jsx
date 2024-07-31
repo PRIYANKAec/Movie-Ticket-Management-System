@@ -1,9 +1,14 @@
-import { SignedIn, SignedOut, SignInButton, UserButton , SignIn, RedirectToSignIn} from "@clerk/clerk-react";
+import { 
+  SignedIn, 
+  SignedOut,  
+  UserButton,  
+  RedirectToSignIn
+} from "@clerk/clerk-react";
 
 const Login = () => {
   
   return (
-    <header>
+    <header >
       <SignedOut>
         <RedirectToSignIn />
       </SignedOut>
